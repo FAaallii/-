@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="840.0" prefWidth="1377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewAdressController">
+   <children>
+      <ImageView fx:id="photo" fitHeight="150.0" fitWidth="200.0" layoutX="589.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="editphoto" layoutX="649.0" layoutY="223.0" mnemonicParsing="false" onAction="#edit_photo" text="编辑头像" textFill="#000000e5" />
+      <TextField fx:id="newname" layoutX="610.0" layoutY="272.0" prefHeight="51.0" prefWidth="157.0" text="请输入姓名">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="1.0" layoutY="334.0" prefHeight="276.0" prefWidth="1377.0">
+         <children>
+            <HBox prefHeight="96.0" prefWidth="1286.0" />
+            <GridPane prefHeight="174.0" prefWidth="1377.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="684.0" minWidth="10.0" prefWidth="143.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="10.0" prefWidth="212.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="0.0" prefWidth="49.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="10.0" prefWidth="323.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="0.0" prefWidth="131.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1270.0" minWidth="10.0" prefWidth="334.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numb_1" prefHeight="30.0" prefWidth="833.0" text="请输入" GridPane.columnIndex="1" />
+                  <TextField fx:id="numb_2" text="请输入" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="numb_3" prefHeight="30.0" prefWidth="833.0" text="请输入" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label prefHeight="58.0" prefWidth="99.0" text="生日" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="邮箱号1" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="手机号1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="邮箱号2" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mail_1" prefHeight="30.0" prefWidth="833.0" text="请输入" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="mail_2" prefHeight="30.0" prefWidth="622.0" text="请输入" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Label prefHeight="58.0" prefWidth="115.0" text="家庭住址" GridPane.columnIndex="6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="112.0" text="工作单位" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="99.0" text="邮编" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="H_address" text="请输入" GridPane.columnIndex="7" />
+                  <TextField fx:id="W_address" text="请输入" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <TextField fx:id="code" text="请输入" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="birthday" prefHeight="30.0" prefWidth="335.0" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <TitledPane animated="false" layoutY="610.0" prefHeight="233.0" prefWidth="1378.0" text="备注">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="notes" layoutY="1.0" prefHeight="200.0" prefWidth="1378.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button fx:id="finish" layoutX="1257.0" layoutY="33.0" mnemonicParsing="false" onAction="#addDataToFile" text="完成">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel" layoutX="65.0" layoutY="33.0" mnemonicParsing="false" text="取消">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
